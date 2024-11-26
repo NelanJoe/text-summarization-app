@@ -2,7 +2,6 @@ import streamlit as st
 from txtai.pipeline import Summary
 import PyPDF2
 
-
 @st.cache_resource
 def summary_text(text):
     summary = Summary()

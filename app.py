@@ -34,7 +34,7 @@ def main():
         input_file = st.file_uploader("Upload your document", type="pdf")
 
         if input_file is not None:
-            if st.button("Convert PDF to Text"):
+            if st.button("Summarize Document"):
                 # Extracting text from PDF
                 with open("temp.pdf", "wb") as f:
                     f.write(input_file.read())
